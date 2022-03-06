@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/navbar.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Pasteleria Huerta</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div id="nav_bar">
+
+        </div>
+
+        <script>
+            $(function () {
+                $("#nav_bar").load("nav.html");
+            });
+        </script>
+    </header>
+</body>
+
+<div class="container">
+    <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Tu apellido">
+
+        <label for="country">Ciudad</label>
+        <select id="country" name="country">
+            <option value="puebla">Puebla</option>
+            <option value="cdmx">CMDX</option>
+            <option value="tijuana">Tijuana</option>
+        </select>
+
+        <label for="subject">Cuentanos, ¿en que te podemos ayudar?</label>
+        <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:200px"></textarea>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <div style="margin: 50px;">
+        <label >Blvd Gustavo Diaz Ordaz N18. CP 73300, Chignahuapan, Puebla</label>
+        <br>
+        <label > 797-97-1-21-27</label>
+        <br>
+        <label>Lunes a Viernes: 8AM - 7PM</label>
+    </div>    
+</div>
+
+
+
+</html>

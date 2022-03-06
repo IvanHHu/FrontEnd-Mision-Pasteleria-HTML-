@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/navbar.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Pasteleria Huerta</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div id="nav_bar">
+
+        </div>
+
+        <script>
+            $(function () {
+                $("#nav_bar").load("nav.html");
+            });
+        </script>
+    </header>
+
+    <div class="container">
+        <form name="Orders" action="checkout.html">
+            <table width=100% cellpadding="20">
+
+                <tr>
+                    <td>Ingresa la cantidad:</td>
+                    <td> <select id="cantidad" name="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+
+                        </select> </td>
+                </tr>
+
+                <tr>
+                    <td>Selecciona el sabor:</td>
+
+                    <td>
+                        <input type="radio" name="Selecciona el savor:" value="Chocolate">Pastel de Chocolate<br>
+                        <input type="radio" name="Selecciona el savor:" value="Vainilla">Pastel de Vainilla<br>
+                        <input type="radio" name="Selecciona el savor:" value="Almendra">Pastel de Almendra<br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tamaño</td>
+
+                    <td>
+                        <input type="radio" name="Selecciona el savor:" value="Chocolate">Chico - 5 rebanadas (120 MXN)<br>
+                        <input type="radio" name="Selecciona el savor:" value="Vainilla">Mediana - 10 rebanadas (200 MXN)<br>
+                        <input type="radio" name="Selecciona el savor:" value="Almendra">Grande - 20 rebanadas (350 MXN)<br>
+                        <input type="radio" name="Selecciona el savor:" value="Almendra">Familiar - 50 rebanadas (600 MXN)<br>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="width: 30%"> Extras:</td>
+                    <td style="width: 70%">
+                        <input type="checkbox" name="chispas">Chispas de chocolate(20 MXN)<br>
+                        <input type="checkbox" name="fresas">Fresas(25 MXN)<br>
+                        <input type="checkbox" name="cerezas">Cerezas(25 MXN)<br>
+                        <input type="checkbox" name="extra_crema">Crema batida (30 MXN)
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Instrucionas adicionales (cualquier instrución adicional tiene un costo de 50 MXN): <br><br>
+                    </td>
+                    <td><textarea name="Special Instructions:" id=" Special Instructions:" cols="36"
+                            rows="4"></textarea>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td colspan="2">
+                        <input type="reset">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="submit">
+                    </td>
+                </tr>
+        </form>
+        </table>
+    </div>
+
+</body>
+
+</html>
